@@ -3,6 +3,7 @@
 
     <Navbar/>
     <Hero/>
+    <service/>
     
   </div>
 </template>
@@ -11,13 +12,15 @@
   import 'aos/dist/aos.css';
   import Navbar from './components/Navbar.vue'
   import Hero from './components/Hero.vue'
+  import Service from './components/Service.vue'
 
   import {ref,nextTick, onMounted } from 'vue';
 
   export default {
     components: {
       Navbar,
-      Hero
+      Hero,
+      Service
     },
     setup() {
 
