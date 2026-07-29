@@ -6,6 +6,7 @@
     <service/>
     <About/>
     <Experience/>
+    <Projects/>
 
     
   </div>
@@ -20,6 +21,7 @@
   import Service from './components/Service.vue'
   import About from './components/About.vue'
   import Experience from './components/Experience.vue';
+import Projects from './components/Projects.vue';
 
 
 
@@ -30,7 +32,8 @@
       Hero,
       Service,
       About,
-      Experience
+      Experience,
+      Projects
     },
     setup() {
 
