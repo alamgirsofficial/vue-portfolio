@@ -5,18 +5,23 @@
     <Hero/>
     <service/>
     <About/>
+    <Experience/>
+
     
   </div>
 </template>
 <script>
+
+  import {ref,nextTick, onMounted } from 'vue';
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import Navbar from './components/Navbar.vue'
   import Hero from './components/Hero.vue'
   import Service from './components/Service.vue'
   import About from './components/About.vue'
+  import Experience from './components/Experience.vue';
 
-  import {ref,nextTick, onMounted } from 'vue';
+
 
 
   export default {
@@ -24,7 +29,8 @@
       Navbar,
       Hero,
       Service,
-      About
+      About,
+      Experience
     },
     setup() {
 
