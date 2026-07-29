@@ -4,6 +4,7 @@
     <Navbar/>
     <Hero/>
     <service/>
+    <About/>
     
   </div>
 </template>
@@ -13,14 +14,17 @@
   import Navbar from './components/Navbar.vue'
   import Hero from './components/Hero.vue'
   import Service from './components/Service.vue'
+  import About from './components/About.vue'
 
   import {ref,nextTick, onMounted } from 'vue';
+
 
   export default {
     components: {
       Navbar,
       Hero,
-      Service
+      Service,
+      About
     },
     setup() {
 
