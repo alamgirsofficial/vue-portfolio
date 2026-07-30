@@ -16,7 +16,7 @@
                 to-blue-900/30 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40
                 transition-all duration-500 hover:transform hover:-translate-y-2 "
                 v-for="(service, index) in services" :key="service.id"
-                :data-aos="fade-up" :data-aos-delay="(index*100)+200"> 
+                data-aos="fade-up" :data-aos-delay="(index*100)+200"> 
 
                 <div class="absolute inset-0 bg-linear-to-r from-blue-500/5
                    to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
