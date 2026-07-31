@@ -1,5 +1,8 @@
 <template>
-  <div class=" min-h-screen bg-linear-to-br from-gray-900 via-blue-900 to-gray-900">
+  <div v-if="loading">
+    <LoadingSpinner/>
+  </div>
+  <div v-else class="min-h-screen bg-linear-to-br from-gray-900 via-blue-900 to-gray-900">
 
     <Navbar/>
     <Hero/>
@@ -9,13 +12,14 @@
     <Projects/>
     <Contact/>
     <Testimonial/>
+    <Footer/>
 
     
   </div>
 </template>
 <script>
 
-  import {ref,nextTick, onMounted } from 'vue';
+  import {ref,nextTick, onMounted, defineComponent } from 'vue';
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import Navbar from './components/Navbar.vue'
@@ -26,11 +30,14 @@
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
 import Testimonial from './components/Testimonial.vue';
+import LoadingSpinner from './components/LoadingSpinner.vue';
+import Footer from './components/Footer.vue';
 
 
 
 
-  export default {
+  export default defineComponent( {
+    name:'App',
     components: {
       Navbar,
       Hero,
@@ -39,7 +46,9 @@ import Testimonial from './components/Testimonial.vue';
       Experience,
       Projects,
       Contact,
-      Testimonial
+      Testimonial,
+      Footer,
+      LoadingSpinner
     },
     setup() {
 
@@ -59,7 +68,7 @@ import Testimonial from './components/Testimonial.vue';
       });
       return{loading};
     }
-  }
+  })
 </script>
 <style lang="">
   
