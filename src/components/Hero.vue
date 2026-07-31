@@ -1,5 +1,5 @@
 <template>
-    <section class="relative w-full overflow-hidden min-h-screen flex items-center">
+    <section class="relative w-full overflow-hidden min-h-screen flex items-center" id="home">
 
         <div class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl  mx-auto relative z-10">
             <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
